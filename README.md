@@ -1,4 +1,4 @@
-![Banner](banner.png)
+![Banner](banner.jpg)
 # CmdTimer - Simple Console Timer
 
 CmdTimer is a header-only utility that provides a lightweight timer for small console tools and utilities.  
