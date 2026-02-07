@@ -1,7 +1,8 @@
+![Banner](banner.png)
 # CmdTimer - Simple Console Timer
 
 CmdTimer is a header-only utility that provides a lightweight timer for small console tools and utilities.  
-It is designed to be easy to drop into any project where you want quick, readable timing for a scope, a phase, or a full run — with minimal code and zero third-party dependencies.
+It is designed to be easy to drop into any project where you want quick, readable timing for a scope, a phase, or a full run — with minimal code and zero third-party dependencies. A nice tool to have when debugging and doing performance tests.
 
 ### Compatibility and Dependencies
 - C++11 Standard and above
@@ -43,7 +44,7 @@ int main()
 | --- | --- |
 | >= 1 hour | `1 h 37 m 11 s` |
 | >= 1 minute and < 1 hour | `10 m 2 s` |
-| >= 1 second and < 1 minute | `0 m 5 s` |
+| >= 1 second and < 1 minute | `5 seconds` |
 | >= 1 millisecond and < 1 second | `120 milliseconds` |
 | < 1 millisecond | `350 microseconds` |
 
