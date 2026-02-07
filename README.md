@@ -31,7 +31,7 @@ CmdTimer is intended to be dead-simple:
 
 int main()
 {
-    timer::start("Processing");
+    timer::start();
     // Do work...
     timer::stop(); // prints elapsed time
     return 0;
