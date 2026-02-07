@@ -6,7 +6,7 @@
   CmdTimer.h
 
   Header-only helpers for simple timer console tool.
-  Requirements:	C++17
+  Requirements:	C++11
   OS Support:Windows/Linux/MacOS
 
   License: MIT
