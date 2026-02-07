@@ -51,11 +51,13 @@ namespace timer
 			result += std::to_string(minutes.count()) + " m ";
 			result += std::to_string(seconds.count()) + " s";
 		}
-		else if (minutes.count() > 0 || seconds.count() > 0)
+		else if (minutes.count() > 0)
 		{
 			result += std::to_string(minutes.count()) + " m ";
 			result += std::to_string(seconds.count()) + " s";
 		}
+		else if (seconds.count() > 0)
+			result += std::to_string(seconds.count()) + " seconds";
 		else if (milliseconds.count() > 0)
 			result += std::to_string(milliseconds.count()) + " milliseconds";
 		else
