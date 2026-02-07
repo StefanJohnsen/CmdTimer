@@ -45,14 +45,17 @@ namespace timer
 
 		std::string result;
 
-		if (hours.count() > 0 || minutes.count() > 0)
+		if (hours.count() > 0)
 		{
-			result += (hours.count() < 10 ? "0" : "") + std::to_string(hours.count()) + ":";
-			result += (minutes.count() < 10 ? "0" : "") + std::to_string(minutes.count()) + ":";
-			result += (seconds.count() < 10 ? "0" : "") + std::to_string(seconds.count());
+			result += std::to_string(hours.count()) + " h ";
+			result += std::to_string(minutes.count()) + " m ";
+			result += std::to_string(seconds.count()) + " s";
 		}
-		else if (seconds.count() > 0)
-			result += std::to_string(seconds.count()) + " seconds";
+		else if (minutes.count() > 0 || seconds.count() > 0)
+		{
+			result += std::to_string(minutes.count()) + " m ";
+			result += std::to_string(seconds.count()) + " s";
+		}
 		else if (milliseconds.count() > 0)
 			result += std::to_string(milliseconds.count()) + " milliseconds";
 		else
